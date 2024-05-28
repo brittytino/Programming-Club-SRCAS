@@ -9,20 +9,20 @@ const Testimonial = () => {
         {
             title: "This club gave me the tools and support to excel.",
             imgSrc: r1Img,
-            name: "John",
+            name: "Gowtham",
             bg: "#faea73",
             
         },
         {
             title: "Being a part of this community boosted my coding confidence.",
             imgSrc: r2Img,
-            name: "Priya",
+            name: "Vedhasini",
             bg: "#cceff6"
         },
         {
             title: "The projects and peer interactions were invaluable.",
             imgSrc: r3Img,
-            name: "Tino",
+            name: "Nithish",
             bg: "#f7cedc"
         }
     ];
