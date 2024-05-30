@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-dark font-poppins
+  @apply bg-[#010101] font-poppins
 
   
 }
