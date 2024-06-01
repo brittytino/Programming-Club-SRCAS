@@ -64,7 +64,7 @@ const WinnerCompDetails = [
             {
                 name: 'Kaariniya SA',
                 regNo: '22127025',
-                department: 'Bsc CS DA',
+                department: 'Bsc CSDA',
                 year: 'II',
                 img: kaariniya,
                 socialImg: kaariniyaGrp,
@@ -74,7 +74,7 @@ const WinnerCompDetails = [
             {
                 name: 'Karuppasamy M',
                 regNo: '22107096',
-                department: 'Bsc IT',
+                department: 'Bsc IT  ',
                 year: 'II',
                 img: karuppasamy,
                 socialImg: karuppasamyGrp,

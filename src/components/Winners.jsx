@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IoIosArrowBack } from "react-icons/io"; //footer icon
-import WinnerCompDetails from './WinnerCompDetails'; //recieve winner details
+import WinnerCompDetails from './WinnerCompDetails'; //receive winner details
 
 const Winners = () => {
     const navigate = useNavigate();
@@ -19,21 +19,23 @@ const Winners = () => {
                 <div key={index} className="mb-20">
                     <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-magenta-300">{competition.title}</h2>
                     <p className="text-center text-gray-400 mb-7 md:mb-10">{competition.date}</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-3 md:gap-12">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-12">
                         {competition.winners.map((winner, idx) => (
-                            <div key={idx} className="bg-gray-900 p-6 rounded-lg shadow-lg transform transition-transform duration-300 md:hover:scale-105 flex flex-col items-center">
-                                <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-cyan-500 mb-4 md:mb-6">
-                                    <img src={winner.img} alt={winner.name} className="w-full h-full object-cover" />
-                                </div>
-                                <h3 className="text-lg md:text-xl font-bold text-center text-teal-300">{winner.name}</h3>
-                                <div className='text-center mt-4 text-sm md:text-base'>
-                                    <p className="text-gray-400">Prize : {winner.prize}</p>
-                                    <p className="text-gray-400">Reg No: {winner.regNo}</p>
-                                    <p className="text-gray-400">Department: {winner.department}</p>
-                                    <p className="text-gray-400 pb-2">Year: {winner.year}</p>
-                                    {winner.socialImg && (
-                                        <img src={winner.socialImg} alt={`${winner.name} social`} className=' min-w-80 md:min-w-96 max-h-40 min-h-40 rounded-md mt-4' />
-                                    )}
+                            <div key={idx} className="bg-gray-900 p-6 rounded-lg shadow-lg transform transition-transform duration-300 md:hover:scale-105 flex flex-col items-center h-full">
+                                <div className="flex flex-col items-center h-full">
+                                    <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-cyan-500 mb-4 md:mb-6">
+                                        <img src={winner.img} alt={winner.name} className="w-full h-full object-cover" />
+                                    </div>
+                                    <h3 className="text-md md:text-xl font-bold text-center text-teal-300">{winner.name}</h3>
+                                    <div className='text-center mt-4 text-sm md:text-base flex-grow flex flex-col justify-end'>
+                                        <p className="text-gray-400">Prize: {winner.prize}</p>
+                                        <p className="text-gray-400">Reg No: {winner.regNo}</p>
+                                        <p className="text-gray-400">Department: {winner.department}</p>
+                                        <p className="text-gray-400 pb-2">Year: {winner.year}</p>
+                                        {winner.socialImg && (
+                                            <img src={winner.socialImg} alt={`${winner.name} social`} className='w-full max-h-40 min-h-24 md:min-h-40 rounded-md mt-4' />
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         ))}
