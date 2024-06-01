@@ -1,6 +1,6 @@
 import About from "./About"
 import HomePage from "./HomePage"
-// import Navbar from "./Navbar"
+import UpcomingEvents from "./UpcomingEvents";
 import Services from "./Services"
 import { animateScroll as scroll } from "react-scroll";
 import Testimonial from "./Testimonial";
@@ -9,8 +9,9 @@ const Home = () => {
 
     return (
         <div>
-            {/* <Navbar /> */}
             <HomePage />
+            <UpcomingEvents/>
+            
             <Services />
             <About />
             <Testimonial/>

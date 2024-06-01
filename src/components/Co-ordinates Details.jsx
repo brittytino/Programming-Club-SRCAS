@@ -8,7 +8,7 @@ import viceChairman from '../images/Co-Ordinators/nithesh.jpg';
 import secretary from '../images/Co-Ordinators/tinobretty.jpg';
 import jointSecretary from '../images/Co-Ordinators/john samuel.jpg';
 
-import sampleImg from '../images/logo-removebg-preview (1).png'
+// import sampleImg from '../images/logo-removebg-preview (1).png'
 
 
 
@@ -24,8 +24,8 @@ export const staffCoordinators = [
 ];
 
 export const officeBearers = [
-    { role: 'Chairman', name: 'Gowtham', img: chairman, dept:'Bsc CS CS', },
-    { role: 'Vice-chairman', name: 'Nitheesh', img: viceChairman, dept:'BCA', },
-    { role: 'Secretary', name: 'Tino Britty J', img: secretary, dept: 'Bsc CS',  },
-    { role: 'Joint-secretary', name: 'John Samuel', img: jointSecretary, dept: 'Bsc IT',  }
+    { role: 'Chairman', name: 'Gowtham', img: chairman, dept:'Bsc CS CS', instagram : '' , linkedin:'' },
+    { role: 'Vice-chairman', name: 'Nitheesh', img: viceChairman, dept:'BCA', instagram:'' , linkedin:''},
+    { role: 'Secretary', name: 'Tino Britty J', img: secretary, dept: 'Bsc CS',  instagram:'https://www.instagram.com/brittytino/?utm_source=ig_web_button_share_sheet' , linkedin:''},
+    { role: 'Joint-secretary', name: 'John Samuel', img: jointSecretary, dept: 'Bsc IT', instagram:'' , linkedin:'' }
 ];

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { IoIosArrowBack } from "react-icons/io"; //footer icon
 
 const Magazine = () => {
 
@@ -39,7 +40,12 @@ const Magazine = () => {
         </a>
       </div>
 
-      <p onClick={()=> handleNavigation('/')} className='hover:cursor-pointer text-gray-500 text-sm text-center mt-5 hover:text-gray-400'>Go back to Home </p>
+      <div className='hover:cursor-pointer text-gray-500 text-sm text-center mt-10 hover:text-gray-400'>
+                <p onClick={() => handleNavigation('/')} className="flex items-center justify-center">
+                    <IoIosArrowBack />
+                    Go back to Home 
+                </p>
+            </div>
     </div>
   );
 };

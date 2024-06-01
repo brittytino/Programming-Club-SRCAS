@@ -32,7 +32,7 @@ const Winners = () => {
                                     <p className="text-gray-400">Department: {winner.department}</p>
                                     <p className="text-gray-400 pb-2">Year: {winner.year}</p>
                                     {winner.socialImg && (
-                                        <img src={winner.socialImg} alt={`${winner.name} social`} className='w-full rounded-md mt-4' />
+                                        <img src={winner.socialImg} alt={`${winner.name} social`} className=' min-w-80 md:min-w-96 max-h-40 min-h-40 rounded-md mt-4' />
                                     )}
                                 </div>
                             </div>

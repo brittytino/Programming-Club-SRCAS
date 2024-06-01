@@ -1,18 +1,17 @@
 import React from 'react';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 // import CoOrdinatesDetails from './Co-ordinates Details';
 import { staffCoordinators, officeBearers } from './Co-ordinates Details';
 
-
-
-const Coordinators= () => {
+const Coordinators = () => {
   return (
     <div className="bg-[#010101] text-white min-h-screen p-6 md:p-12">
-      <h1 className="text-4xl md:text-4xl font-extrabold text-yellow-500 text-center mb-12 ">Co-ordinators</h1>
+      <h1 className="text-4xl md:text-4xl font-extrabold text-yellow-500 text-center mb-12">Co-ordinators</h1>
 
       <section className="mb-16">
-        <h2 className="md:text-4xl text-2xl font-semibold text-teal-500 mb-8 text-center relative ">
+        <h2 className="md:text-4xl text-2xl font-semibold text-teal-500 mb-8 text-center relative">
           Staff Coordinators
-          <span className="block h-1 w-24  mt-2 bg-yellow-500 mx-auto rounded"></span>
+          <span className="block h-1 w-24 mt-2 bg-yellow-500 mx-auto rounded"></span>
         </h2>
         <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {staffCoordinators.map((coordinator, index) => (
@@ -38,7 +37,7 @@ const Coordinators= () => {
         </h2>
         <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {officeBearers.map((bearer, index) => (
-            <div key={index} className="relative bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div key={index} className="relative bg-gray-800 p-6 rounded-lg shadow-lg transform md:hover:scale-105 transition-transform duration-300">
               <div className="flex flex-col items-center">
                 <div className="relative w-32 h-32 bg-[#f8b607] rounded-full overflow-hidden border-4 border-teal-600 mb-4">
                   <img src={bearer.img} alt={bearer.name} className="w-full h-full object-cover" />
@@ -46,12 +45,18 @@ const Coordinators= () => {
                 <h3 className="text-2xl font-bold">{bearer.name}</h3>
                 <p className="text-lg text-gray-400">{bearer.dept}</p>
                 <p className="text-lg text-gray-400">{bearer.role}</p>
+                <div className="flex mt-4 space-x-4">
+                  <a href={bearer.instagram} className="text-pink-500 hover:text-pink-400" target="_blank" rel="noopener noreferrer">
+                    <FaInstagram size={24} />
+                  </a>
+                  <a href={bearer.linkedin} className="text-blue-500 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin size={24} />
+                  </a>
+                </div>
               </div>
             </div>
           ))}
-          
         </div>
-        
       </section>
     </div>
   );

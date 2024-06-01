@@ -39,7 +39,7 @@ const cardContent = [
 
 const ServicesSection = () => {
     return (
-        <div className="md:-mt-24 text-center">
+        <div className=" mt-20 md:mt-28 text-center">
             <h1 className="text-[#F8B607] underline underline-offset-8  decoration-[#007F00] text-3xl font-semibold">Our Club Services</h1>
 
             {/* Cards */}

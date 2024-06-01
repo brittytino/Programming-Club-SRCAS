@@ -50,11 +50,7 @@ const Navbar = () => {
                             )}
                         </li>
                     ))}
-                    <Link to="/join">
-                        <button className="md:ml-4 transition-all hover:bg-[#28A745] hover:text-black font-semibold rounded-2xl px-3 py-2 border border-[#ffff] text-[#ffff]">
-                            Join Us
-                        </button>
-                    </Link>
+                
                 </ul>
             </div>
         </div>

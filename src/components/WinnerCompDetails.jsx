@@ -2,17 +2,20 @@
 // To add new achievers details , just add new array in the same format !
 
 
-
+// Byte Battle
 import vergina from '../images/winners/vergina.png';
 import pravin from '../images/winners/pravin.png';
 import venkatesh from '../images/winners/venkatesh.png';
+import socialw1Img from '../images/social-w1.jpg'; // grp photo
+import socialw2Img from '../images/social-w2.jpg';
+import socialw3Img from '../images/social-w3.jpg';
 
+//Web Wizard 
 import kaariniya from '../images/winners/kaariniya.png'
 import karuppasamy from '../images/winners/karuppasamy.png'
 
-import socialw1Img from '../images/social-w1.jpg';
-import socialw2Img from '../images/social-w2.jpg';
-import socialw3Img from '../images/social-w3.jpg';
+import kaariniyaGrp from '../images/winners/kaariniya Grp.jpg' 
+import karuppasamyGrp from '../images/winners/kaariniya Grp.jpg'
 
 const WinnerCompDetails = [
 
@@ -64,8 +67,9 @@ const WinnerCompDetails = [
                 department: 'Bsc CS DA',
                 year: 'II',
                 img: kaariniya,
+                socialImg: kaariniyaGrp,
                 prize : "I",
-                // socialImg: socialw1Img
+                
             },
             {
                 name: 'Karuppasamy M',
@@ -73,8 +77,8 @@ const WinnerCompDetails = [
                 department: 'Bsc IT',
                 year: 'II',
                 img: karuppasamy,
+                socialImg: karuppasamyGrp,
                 prize:"II",
-                // socialImg: socialw2Img
             },
         ],
     },
