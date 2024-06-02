@@ -10,21 +10,21 @@ import Magazine from "./components/Magazine";
 import PageTransition from "./components/PageTransition";
 import ScrollToTop from "./components/ScrollToTop";
 
+
 function App() {
     return (
         <BrowserRouter>
-        <ScrollToTop />
+            <ScrollToTop />
             <Navbar />
             <PageTransition>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/gallery" element={<Gallery />} />
-                <Route path="/join" element={<Join />} />
-                <Route path="/coordinates" element={<Coordinates/>}/>
-                <Route path="/Winners" element={<Winners/>}/>
-                <Route path="/Magazine" element={<Magazine/>}/>
-                
-            </Routes>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/gallery" element={<Gallery />} />
+                    <Route path="/join" element={<Join />} />
+                    <Route path="/coordinates" element={<Coordinates />} />
+                    <Route path="/Winners" element={<Winners />} />
+                    <Route path="/Magazine" element={<Magazine />} />
+                </Routes>
             </PageTransition>
         </BrowserRouter>
     );

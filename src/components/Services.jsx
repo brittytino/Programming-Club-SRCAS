@@ -1,3 +1,5 @@
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import { FcIdea } from 'react-icons/fc';
 import { FaChalkboardTeacher } from 'react-icons/fa';
 import { GiTeacher } from 'react-icons/gi';
@@ -38,26 +40,47 @@ const cardContent = [
 ];
 
 const ServicesSection = () => {
+    const { ref: titleRef, inView: titleInView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
     return (
-        <div className=" mt-20 md:mt-28 text-center">
-            <h1 className="text-[#F8B607] underline underline-offset-8  decoration-[#007F00] text-3xl font-semibold">Our Club Services</h1>
+        <div className="mt-20 md:mt-28 text-center">
+            <h1 ref={titleRef} className={`text-[#F8B607] underline underline-offset-8 decoration-[#007F00] text-3xl font-semibold transition-opacity duration-1000 ${titleInView ? 'opacity-100' : 'opacity-0'}`}>
+                Our Club Services
+            </h1>
 
             {/* Cards */}
             <div className="flex justify-center mt-10 px-3 md:px-28 pb-4 text-[#3CB371]">
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
                     {
                         cardContent.map((item, index) => (
-                            <div key={index} className="bg-[#1c1c24] hover:text-white shadow-xl hover:bg-[#1e521e] hover:transition-all text-left rounded-lg p-6 flex flex-col items-center">
-                                <div className="mb-4">
-                                    {item.imgSrc}
-                                </div>
-                                <h2 className="text-2xl font-semibold  mb-2">{item.name}</h2>
-                                <p className=" text-gray-400 text-xs md:text-base">{item.desc}</p>
-                            </div>
+                            <ServiceCard key={index} imgSrc={item.imgSrc} name={item.name} desc={item.desc} />
                         ))
                     }
                 </div>
             </div>
+        </div>
+    );
+};
+
+const ServiceCard = ({ imgSrc, name, desc }) => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    return (
+        <div
+            ref={ref}
+            className={`bg-[#1c1c24] hover:text-white shadow-xl hover:bg-[#1e521e] hover:transition-all text-left rounded-lg p-6 flex flex-col items-center transition-transform duration-1000 ease-in-out transform ${inView ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'}`}
+        >
+            <div className="mb-4">
+                {imgSrc}
+            </div>
+            <h2 className="text-2xl font-semibold mb-2">{name}</h2>
+            <p className="text-gray-400 text-xs md:text-base">{desc}</p>
         </div>
     );
 };
