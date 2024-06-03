@@ -36,7 +36,7 @@ const WinnerCompDetails = [
             {
                 name: 'Pravin B',
                 regNo: '23127035',
-                department: 'Bsc CS DA',
+                department: 'BSC CS & DA',
                 year: 'I',
                 img: pravin,
                 socialImg: socialw2Img,
@@ -45,7 +45,7 @@ const WinnerCompDetails = [
             {
                 name: 'Venkatesh B',
                 regNo: '22106062',
-                department: 'Bsc CS',
+                department: 'BSC CS',
                 year: 'II',
                 img: venkatesh,
                 socialImg: socialw3Img,
@@ -64,7 +64,7 @@ const WinnerCompDetails = [
             {
                 name: 'Kaariniya SA',
                 regNo: '22127025',
-                department: 'Bsc CSDA',
+                department: 'BSC CSDA',
                 year: 'II',
                 img: kaariniya,
                 socialImg: kaariniyaGrp,
@@ -74,7 +74,7 @@ const WinnerCompDetails = [
             {
                 name: 'Karuppasamy M',
                 regNo: '22107096',
-                department: 'Bsc IT  ',
+                department: 'BSC IT  ',
                 year: 'II',
                 img: karuppasamy,
                 socialImg: karuppasamyGrp,

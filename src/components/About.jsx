@@ -8,20 +8,18 @@ const Points = [
 
 const About = () => {
     return (
-        <div id="about" className="bg-[#121212] mt-20 px-6 md:px-28 py-10 md:py-28">
+        <div id="about" className="bg-[#121212] mt-20 px-6 md:px-28 py-10 md:py-20 lg:py-28">
             <div className="md:grid grid-cols-2 gap-8">
                 <div>
-                    <h1 className="text-xl md:text-3xl font-semibold pt-2 md:pt-20 pb-3 text-[#F8B607]">About Our Programming Club</h1>
+                    <h1 className="text-xl md:text-3xl font-semibold pt-2 md:pt-20 lg:pt-20 pb-3 text-[#F8B607]">About Our Programming Club</h1>
                     <p className="text-gray-300 text-sm md:text-xl pb-6 md:pb-16">We foster innovation, collaboration, and the spirit of coding excellence in our vibrant community.</p>
-                    <div className="flex items-center">
-                        <div>
-                            {Points.map((item, index) => (
-                                <div key={index} className="flex items-center text-[#28A745] text-sm md:text-xl leading-10 md:leading-[60px]">
-                                    <FaCode className="text-2xl md:text-4xl text-[#F8B607] mr-2" />
-                                    <p>{item}</p>
-                                </div>
-                            ))}
-                        </div>
+                    <div className="space-y-4">
+                        {Points.map((item, index) => (
+                            <div key={index} className="flex items-center text-[#28A745] text-sm md:text-xl">
+                                <FaCode className="text-2xl md:text-4xl text-[#F8B607] mr-2" />
+                                <p>{item}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div>

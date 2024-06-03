@@ -18,14 +18,14 @@ import jointSecretary from '../images/Co-Ordinators/john samuel.jpg';
 
 
 export const staffCoordinators = [
-    { name: 'Dr.N.Sumathi', img: HODimg, dept :"Bsc IT" , intro: 'Head of the Department' },
-    { name: 'Dr.M.Pranesh', img: AssociateProf,dept:"Bsc CS", intro: 'Associate Profesor' },
-    { name: 'Dr.S.Mohan', img: AssociateProf2,dept:"Bsc CS CS", intro: 'Associate Profesor' }
+    { name: 'Dr.N.Sumathi', img: HODimg, dept :"BSC IT" , intro: 'Head of the Department' },
+    { name: 'Dr.M.Pranesh', img: AssociateProf,dept:"BSC CS", intro: 'Associate Professor' },
+    { name: 'Dr.S.Manoj', img: AssociateProf2,dept:"BSC CS & CS", intro: 'Associate Professor' }
 ];
 
 export const officeBearers = [
-    { role: 'Chairman', name: 'Gowtham', img: chairman, dept:'Bsc CS CS', instagram : '' , linkedin:'' },
-    { role: 'Vice-chairman', name: 'Nitheesh', img: viceChairman, dept:'BCA', instagram:'' , linkedin:''},
-    { role: 'Secretary', name: 'Tino Britty J', img: secretary, dept: 'Bsc CS',  instagram:'https://www.instagram.com/brittytino/?utm_source=ig_web_button_share_sheet' , linkedin:''},
-    { role: 'Joint-secretary', name: 'John Samuel', img: jointSecretary, dept: 'Bsc IT', instagram:'' , linkedin:'' }
+    { role: 'Chairman', name: 'Gowtham', img: chairman, dept:'BSC CS & CS', instagram : 'https://www.instagram.com/gowtham_offl._8/' ,  },
+    { role: 'Vice-chairman', name: 'Nitheesh', img: viceChairman, dept:'BCA', instagram:'https://www.instagram.com/_kiddo__boy_29' ,},
+    { role: 'Secretary', name: 'Tino Britty J', img: secretary, dept: 'BSC CS',  instagram:'https://www.instagram.com/brittytino/' , linkedin:'https://www.linkedin.com/in/brittytino'},
+    { role: 'Joint-secretary', name: 'John Samuel', img: jointSecretary, dept: 'Bsc IT', instagram:'https://www.instagram.com/samjohn_offl' , linkedin:'https://www.linkedin.com/in/samjohnoffl' }
 ];

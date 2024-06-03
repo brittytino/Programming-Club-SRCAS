@@ -1,53 +1,55 @@
-import r1Img from '../images/r1.png';
-import r2Img from '../images/r2.jpg';
-import r3Img from '../images/r3.jpg';
-import { FaStar } from "react-icons/fa6";
+import { useInView } from 'react-intersection-observer';
+import raviImg from '../images/ravi.png';
+import priyaImg from '../images/priya.png';
+import PravinImg from '../images/Pravin.png';
 
-const Testimonial = () => {
-    const review = [
-        {
-            title: "This club gave me the tools and support to excel.",
-            imgSrc: r1Img,
-            name: "John",
-            bg: "#121212", // Black background
-            text: "#F6F5F5" // Light text color
-        },
-        {
-            title: "Being a part of this community boosted my coding confidence.",
-            imgSrc: r2Img,
-            name: "Priya",
-            bg: "#121212", // Black background
-            text: "#F6F5F5" // Light text color
-        },
-        {
-            title: "The projects and peer interactions were invaluable.",
-            imgSrc: r3Img,
-            name: "Tino",
-            bg: "#121212", // Black background
-            text: "#F6F5F5" // Light text color
-        }
-    ];
+// Testimonial data
+const testimonials = [
+    {
+        title: "The club offers a fantastic range of activities, from beginner workshops to advanced coding competitions.",
+        imgSrc: raviImg,
+        name: "Tamil Amuthan",
+    },
+    {
+        title: "There’s a strong emphasis on practical experience, with numerous project-based learning opportunities.",
+        imgSrc: priyaImg,
+        name: "Seetha Mahalakshmi",
+    },
+    {
+        title: "The club’s efforts to stay with current industry trends are remarkable, and I was eager to contribute my skills.",
+        imgSrc: PravinImg,
+        name: "Pravin Boopathi",
+    },
+];
+
+// Main Testimonial component
+const Testimonial = () => (
+    <div className="mt-10 pt-10 pb-10 px-6 md:px-28">
+        <h1 className="text-center text-3xl font-semibold text-gray-200">Hear from Our Club Members</h1>
+        <div className="pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-16">
+            {testimonials.map((review, index) => (
+                <ReviewCard key={index} {...review} />
+            ))}
+        </div>
+    </div>
+);
+
+// Sub-component to render individual review cards
+const ReviewCard = ({ title, imgSrc, name }) => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
 
     return (
-        <div className="mt-10 pt-10 pb-10 md:flex flex-col justify-center items-center">
-            <h1 className="text-center text-3xl font-semibold text-gray-600">Hear from Our Club Members</h1>
-            <div className='pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-16 px-4 md:px-28 justify-center items-center'>
-                {review.map((item, index) => (
-                    <div key={index} className="rounded-lg p-2 w-full md:w-fit md:p-5" style={{ backgroundColor: item.bg, color: item.text }}>
-                        <h1 className="text-xs md:text-2xl text-left">{item.title}</h1>
-                        <div className='flex justify-start gap-4 pt-2 items-center'>
-                            <img src={item.imgSrc} className='w-12 md:w-20' alt="" />
-                            <p>{item.name}</p>
-                            <div className='flex flex-row text-yellow-500'>
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                            </div>
-                        </div>
-                    </div>
-                ))}
+        <div
+            ref={ref}
+            className={`rounded-lg p-2 w-full md:w-fit md:p-5 bg-[#121212] hover:bg-gray-800 text-white transition-transform duration-1000 ease-in-out transform ${inView ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'}`}
+        >
+            <h1 className="text-xs md:text-xl text-left text-gray-400">{title}</h1>
+            <div className="flex justify-start gap-4 pt-3 items-center">
+                <img src={imgSrc} className="w-12 md:w-20" alt={name} />
+                <p className="font-semibold">{name}</p>
             </div>
         </div>
     );

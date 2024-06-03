@@ -74,7 +74,7 @@ const ServiceCard = ({ imgSrc, name, desc }) => {
     return (
         <div
             ref={ref}
-            className={`bg-[#1c1c24] hover:text-white shadow-xl hover:bg-[#1e521e] hover:transition-all text-left rounded-lg p-6 flex flex-col items-center transition-transform duration-1000 ease-in-out transform ${inView ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'}`}
+            className={`bg-[#1c1c24] text-left rounded-lg p-6 flex flex-col items-center transition-all duration-[1500ms] ease-in-out transform ${inView ? 'translate-y-0 rotate-0 opacity-100 scale-100' : 'translate-y-10 rotate-3 opacity-0 scale-95'} shadow-xl hover:shadow-2xl hover:bg-[#1e521e] hover:text-white hover:scale-105`}
         >
             <div className="mb-4">
                 {imgSrc}
