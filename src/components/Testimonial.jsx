@@ -6,19 +6,20 @@ import PravinImg from '../images/Pravin.png';
 // Testimonial data
 const testimonials = [
     {
-        title: "The club offers a fantastic range of activities, from beginner workshops to advanced coding competitions.",
-        imgSrc: raviImg,
-        name: "Tamil Amuthan",
+        title: "The club’s efforts to stay with current industry trends are remarkable, and I was eager to contribute my skills.",
+        imgSrc: PravinImg,
+        name: "Pravin Boopathi",
     },
+    
     {
         title: "There’s a strong emphasis on practical experience, with numerous project-based learning opportunities.",
         imgSrc: priyaImg,
         name: "Seetha Mahalakshmi",
     },
     {
-        title: "The club’s efforts to stay with current industry trends are remarkable, and I was eager to contribute my skills.",
-        imgSrc: PravinImg,
-        name: "Pravin Boopathi",
+        title: "The club offers a fantastic range of activities, from beginner workshops to advanced coding competitions.",
+        imgSrc: raviImg,
+        name: "Tamil Amuthan",
     },
 ];
 
