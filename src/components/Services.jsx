@@ -48,7 +48,7 @@ const ServicesSection = () => {
     return (
         <div className="mt-20 md:mt-28 text-center">
             <h1 ref={titleRef} className={`text-[#F8B607] underline underline-offset-8 decoration-[#007F00] text-3xl font-semibold transition-opacity duration-1000 ${titleInView ? 'opacity-100' : 'opacity-0'}`}>
-                Our Club Services
+                Our Club Activities 
             </h1>
 
             {/* Cards */}
