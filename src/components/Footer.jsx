@@ -8,7 +8,7 @@ const Footer = () => {
     }
 
     return (
-        <div className="pt-10 md:pt-20 pb-10 bg-black">
+        <div className="pt-10 md:pt-20 pb-4 bg-black">
             <hr />
             <h1 className="mt-10 text-center text-2xl md:text-4xl font-semibold text-yellow-500 pb-4">Ready to Elevate Your Coding Skills?</h1>
             <p className="text-center text-xl md:text-2xl font-medium text-gray-200">Join Programming Club for unmatched coding experiences and growth.</p>

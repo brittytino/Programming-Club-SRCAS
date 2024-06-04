@@ -22,7 +22,7 @@ const UpcomingEvents = () => {
     });
 
     return (
-        <div className='mt-20 flex flex-col justify-center items-center'>
+        <div className='mt-7 flex flex-col justify-center items-center'>
             <h1 ref={titleRef} className={`text-white mt-16 text-center font-poppins font-bold text-3xl md:text-4xl underline underline-offset-8 decoration-secondary transition-opacity duration-1000 ${titleInView ? 'opacity-100' : 'opacity-0'}`}>
                 Upcoming Events
             </h1>

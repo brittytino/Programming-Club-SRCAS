@@ -18,14 +18,14 @@ import jointSecretary from '../images/Co-Ordinators/john samuel.jpg';
 
 
 export const staffCoordinators = [
-    { name: 'Dr.N.Sumathi', img: HODimg, dept :"BSC INFORMATION TECHNOLOGY" , intro: 'Head of the Department' },
-    { name: 'Dr.M.Praneesh', img: AssociateProf,dept:"BSC COMPUTER SCIENCE", intro: 'Associate Professor' },
-    { name: 'Mr.S.Manoj', img: AssociateProf2,dept:"BSC COMPUTER SCIENCE WITH COGNITIVE SCIENCE", intro: 'Associate Professor' }
+    { name: 'Dr.N.Sumathi', img: HODimg, dept :"BSc INFORMATION TECHNOLOGY" , intro: 'Head of the Department' },
+    { name: 'Dr.M.Praneesh', img: AssociateProf,dept:"BSc COMPUTER SCIENCE", intro: 'Associate Professor' },
+    { name: 'Mr.S.Manoj', img: AssociateProf2,dept:"BSc COMPUTER SCIENCE WITH COGNITIVE SYSTEM", intro: 'Assistant Professor ' }
 ];
 
 export const officeBearers = [
-    { role: 'Chairman', name: 'Gowtham J', img: chairman, dept:'BSC CS & CS', instagram : 'https://www.instagram.com/gowtham_offl._8/' ,  },
+    { role: 'Chairman', name: 'Gowtham J', img: chairman, dept:'BSc CS & CS', instagram : 'https://www.instagram.com/gowtham_offl._8/' ,  },
     { role: 'Vice-chairman', name: 'Nitheesh', img: viceChairman, dept:'BCA', instagram:'https://www.instagram.com/_kiddo__boy_29' ,},
-    { role: 'Secretary', name: 'Tino Britty J', img: secretary, dept: 'BSC CS',  instagram:'https://www.instagram.com/brittytino/' , linkedin:'https://www.linkedin.com/in/brittytino'},
-    { role: 'Joint-secretary', name: 'John Samuel', img: jointSecretary, dept: 'Bsc IT', instagram:'https://www.instagram.com/samjohn_offl' , linkedin:'https://www.linkedin.com/in/samjohnoffl' }
+    { role: 'Secretary', name: 'Tino Britty J', img: secretary, dept: 'BSc CS',  instagram:'https://www.instagram.com/brittytino/' , linkedin:'https://www.linkedin.com/in/brittytino'},
+    { role: 'Joint-secretary', name: 'John Samuel', img: jointSecretary, dept: 'BSc IT', instagram:'https://www.instagram.com/samjohn_offl' , linkedin:'https://www.linkedin.com/in/samjohnoffl' }
 ];

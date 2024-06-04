@@ -1,5 +1,6 @@
 import React from 'react';
 import hackSphereImg from '../images/hacksphere.jpg';
+import HomeImg from '../images/home .jpg'
 import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
@@ -27,7 +28,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className='px-4 mt-20 md:mt-24 flex justify-center items-center'>
-                <img src={hackSphereImg} className='rounded-lg w-full md:w-[66%] h-auto md:h-[600px] border-2 border-secondary' alt="Coding Image" />
+                <img src={HomeImg} className='rounded-lg w-full ease-in-out md:w-[66%] h-auto md:h-[600px] border-4 border-secondary transition-all' alt="Coding Image" />
             </div>
         </div>
     );
