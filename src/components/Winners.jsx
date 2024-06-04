@@ -19,7 +19,7 @@ const Winners = () => {
                 <div key={index} className="mb-20">
                     <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-magenta-300">{competition.title}</h2>
                     <p className="text-center text-gray-400 mb-7 md:mb-10">{competition.date}</p>
-                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-12">
                         {competition.winners.map((winner, idx) => (
                             <div key={idx} className="bg-gray-900 p-6 rounded-lg shadow-lg transform transition-transform duration-300 md:hover:scale-105 flex flex-col items-center h-full">
                                 <div className="flex flex-col items-center h-full">
