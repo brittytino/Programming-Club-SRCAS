@@ -7,7 +7,7 @@ import PravinImg from '../images/Pravin.png';
 const testimonials = [
     {
         title: "The club’s efforts to stay with current industry trends are remarkable, and I was eager to contribute my skills.",
-        imgSrc: PravinImg,
+        imgSrc: raviImg,
         name: "Pravin Boopathi",
     },
     
@@ -18,7 +18,7 @@ const testimonials = [
     },
     {
         title: "The club offers a fantastic range of activities, from beginner workshops to advanced coding competitions.",
-        imgSrc: raviImg,
+        imgSrc: PravinImg,
         name: "Tamil Amuthan",
     },
 ];

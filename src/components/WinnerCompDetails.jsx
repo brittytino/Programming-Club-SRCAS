@@ -5,7 +5,7 @@
 // Byte Battle
 import vergina from '../images/winners/vergina.png';
 import pravin from '../images/winners/pravin.png';
-import venkatesh from '../images/winners/venkatesh.png';
+import venkatesh from '../images/winners/venkatesh.jpg';
 import socialw1Img from '../images/social-w1.jpg'; // grp photo
 import socialw2Img from '../images/social-w2.jpg';
 import socialw3Img from '../images/social-w3.jpg';
@@ -15,7 +15,7 @@ import kaariniya from '../images/winners/kaariniya.png'
 import karuppasamy from '../images/winners/karuppasamy.png'
 
 import kaariniyaGrp from '../images/winners/kaariniya Grp.jpg' 
-import karuppasamyGrp from '../images/winners/kaariniya Grp.jpg'
+import karuppasamyGrp from '../images/winners/karuppasamy Grp.jpg'
 
 const WinnerCompDetails = [
 
