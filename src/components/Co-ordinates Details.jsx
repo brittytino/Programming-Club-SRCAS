@@ -6,7 +6,8 @@ import AssociateProf2 from '../images/Co-Ordinators/manoj.png'
 
 import chairman from '../images/Co-Ordinators/tinobretty.jpg';
 import assistantChairman from '../images/Co-Ordinators/john samuel.jpg';
-import secretary from '../images/Co-Ordinators/pravin.jpg'
+// import secretary from '../images/Co-Ordinators/pravin.jpg'
+import secretary from '../images/Co-Ordinators/secretary.jpg'
 import viceChairman from '../images/Co-Ordinators/kanishka.jpg'
 
 // import sampleImg from '../images/logo-removebg-preview (1).png'
