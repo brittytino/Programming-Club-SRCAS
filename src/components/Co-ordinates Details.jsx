@@ -3,10 +3,11 @@ import AssociateProf from '../images/Co-Ordinators/praneesh.png'
 import AssociateProf2 from '../images/Co-Ordinators/manoj.png'
 
 //office bearers :
-import chairman from '../images/Co-Ordinators/gowtham.jpg';
-import viceChairman from '../images/Co-Ordinators/nithesh.jpg';
-import secretary from '../images/Co-Ordinators/tinobretty.jpg';
-import jointSecretary from '../images/Co-Ordinators/john samuel.jpg';
+
+import chairman from '../images/Co-Ordinators/tinobretty.jpg';
+import assistantChairman from '../images/Co-Ordinators/john samuel.jpg';
+import secretary from '../images/Co-Ordinators/pravin.jpg'
+import viceChairman from '../images/Co-Ordinators/kanishka.jpg'
 
 // import sampleImg from '../images/logo-removebg-preview (1).png'
 
@@ -24,8 +25,9 @@ export const staffCoordinators = [
 ];
 
 export const officeBearers = [
-    { role: 'Chairman', name: 'Gowtham J', img: chairman, dept:'BSc CS & CS', instagram : 'https://www.instagram.com/gowtham_offl._8/' ,  },
-    { role: 'Vice-chairman', name: 'Nitheesh', img: viceChairman, dept:'BCA', instagram:'https://www.instagram.com/_kiddo__boy_29' ,},
-    { role: 'Secretary', name: 'Tino Britty J', img: secretary, dept: 'BSc CS',  instagram:'https://www.instagram.com/brittytino/' , linkedin:'https://www.linkedin.com/in/brittytino'},
-    { role: 'Joint-secretary', name: 'John Samuel', img: jointSecretary, dept: 'BSc IT', instagram:'https://www.instagram.com/samjohn_offl' , linkedin:'https://www.linkedin.com/in/samjohnoffl' }
+    { role: 'Chairman', name: 'Tino Britty J', img: chairman, dept: 'BSc CS',  instagram:'https://www.instagram.com/brittytino/' , linkedin:'https://www.linkedin.com/in/brittytino'},
+    { role: 'Assistant Chairman', name: 'John Samuel', img: assistantChairman, dept: 'BSc IT', instagram:'https://www.instagram.com/samjohn_offl' , linkedin:'https://www.linkedin.com/in/samjohnoffl' },
+    { role: 'Secretary', name: 'Pravin B', img: secretary, dept:'BSc CS & DA', instagram : 'https://www.instagram.com/bpravin._/' , linkedin : 'https://www.linkedin.com/in/pravinboopathi/'  },
+    { role: 'Joint Secretary', name: 'Kanishka C', img: viceChairman, dept:'BSc CS (AI & DS)', instagram:'https://www.instagram.com/kaniskha_chandrasekar/' , linkedin: 'https://www.linkedin.com/in/kaniskha-c-2124a5292/'},
+    
 ];

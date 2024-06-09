@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Gallery from "./components/Gallery";
 import Join from "./components/Join";
-import Coordinates from "./components/Coordinates";
+import Humans from "./components/Coordinates"
 import Winners from "./components/Winners";
 import Magazine from "./components/Magazine";
 import PageTransition from "./components/PageTransition";
@@ -21,7 +21,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/join" element={<Join />} />
-                    <Route path="/coordinates" element={<Coordinates />} />
+                    <Route path = "/Humans" element={<Humans/>}/>
                     <Route path="/Winners" element={<Winners />} />
                     <Route path="/Magazine" element={<Magazine />} />
                 </Routes>

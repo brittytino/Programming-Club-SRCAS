@@ -2,6 +2,7 @@ import React from 'react';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 // import CoOrdinatesDetails from './Co-ordinates Details';
 import { staffCoordinators, officeBearers } from './Co-ordinates Details';
+import Executive from './Executive'
 
 const Coordinators = () => {
   return (
@@ -57,7 +58,13 @@ const Coordinators = () => {
             </div>
           ))}
         </div>
+        <hr className="border-gray-700 mt-5 w-full" />
       </section>
+
+      {/* Executive members  */}
+          <Executive/>
+
+
     </div>
   );
 };
