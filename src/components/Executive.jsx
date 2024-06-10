@@ -8,11 +8,11 @@ const Executive = () => {
     return (
         <div className=" mt-20">
             <h2 className="md:text-4xl text-2xl font-semibold text-teal-400 mb-8 text-center relative">
-                Executive Members
+            Executive Members & Volunteers
                 <span className="block h-1 w-24 bg-yellow-500 mt-2 mx-auto rounded"></span>
             </h2>
             <section className=" mt-10">
-                <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
                     {executiveDetails.map((item, index) => (
                         <div key={index} className="relative bg-gray-800 p-6 rounded-lg shadow-lg ">
                             <div className="flex flex-col items-center">

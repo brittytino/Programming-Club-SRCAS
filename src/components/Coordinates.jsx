@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaInstagram, FaLinkedin } from 'react-icons/fa';
-// import CoOrdinatesDetails from './Co-ordinates Details';
-import { staffCoordinators, officeBearers } from './Co-ordinates Details';
-import Executive from './Executive'
+import { FaInstagram, FaLinkedin } from 'react-icons/fa'; //icons 
+import { RiGlobalLine } from "react-icons/ri"; //icons
+import { staffCoordinators, officeBearers } from './Co-ordinates Details'; //details
+import Executive from './Executive' 
 
 const Coordinators = () => {
   return (
@@ -14,7 +14,7 @@ const Coordinators = () => {
           Staff Coordinators
           <span className="block h-1 w-24 mt-2 bg-yellow-500 mx-auto rounded"></span>
         </h2>
-        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-12">
           {staffCoordinators.map((coordinator, index) => (
             <div key={index} className="relative bg-gray-800 p-8 rounded-lg shadow-lg hover:bg-gray-700 transition-colors duration-300">
               <div className="flex flex-col items-center">
@@ -23,7 +23,7 @@ const Coordinators = () => {
                 </div>
                 <h3 className="text-3xl font-bold">{coordinator.name}</h3>
                 <p className="text-lg text-gray-400 text-center mt-2">{coordinator.dept}</p>
-                <p className="text-lg text-gray-400 text-center mt-2">{coordinator.intro}</p>
+                <p className="text-lg text-[#fbbf68] font-bold text-center mt-2">{coordinator.intro}</p>
               </div>
             </div>
           ))}
@@ -36,7 +36,7 @@ const Coordinators = () => {
           Office Bearers
           <span className="block h-1 w-24 bg-yellow-500 mt-2 mx-auto rounded"></span>
         </h2>
-        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-12">
           {officeBearers.map((bearer, index) => (
             <div key={index} className="relative bg-gray-800 p-6 rounded-lg shadow-lg transform md:hover:scale-105 transition-transform duration-300">
               <div className="flex flex-col items-center">
@@ -45,7 +45,7 @@ const Coordinators = () => {
                 </div>
                 <h3 className="text-2xl font-bold">{bearer.name}</h3>
                 <p className="text-lg text-gray-400">{bearer.dept}</p>
-                <p className="text-lg text-gray-400">{bearer.role}</p>
+                <p className="text-lg text-[#fbbf68] font-bold">{bearer.role}</p>
                 <div className="flex mt-4 space-x-4">
                   <a href={bearer.instagram} className="text-pink-500 hover:text-pink-400" target="_blank" rel="noopener noreferrer">
                     <FaInstagram size={24} />
@@ -53,6 +53,10 @@ const Coordinators = () => {
                   <a href={bearer.linkedin} className="text-blue-500 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin size={24} />
                   </a>
+                  <a href={bearer.portfolio} className="text-black hover:text-blue-400 transform hover:scale-105 md:hover:scale-100 transition-transform duration-300" target="_blank" rel="noopener noreferrer">
+                    <RiGlobalLine size={24} />
+                  </a>
+
                 </div>
               </div>
             </div>
@@ -62,7 +66,7 @@ const Coordinators = () => {
       </section>
 
       {/* Executive members  */}
-          <Executive/>
+      <Executive />
 
 
     </div>
