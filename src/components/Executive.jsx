@@ -8,7 +8,7 @@ const Executive = () => {
     return (
         <div className=" mt-20">
             <h2 className="md:text-4xl text-2xl font-semibold text-teal-400 mb-8 text-center relative">
-                Executive Members
+                Executive Members & Volunteers
                 <span className="block h-1 w-24 bg-yellow-500 mt-2 mx-auto rounded"></span>
             </h2>
             <section className=" mt-10">
