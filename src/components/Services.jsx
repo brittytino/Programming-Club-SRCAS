@@ -10,12 +10,12 @@ const cardContent = [
     {
         imgSrc: <FcIdea className="text-4xl text-[#F8B607]" />,
         name: "Hackathons",
-        desc: "Show your skills in fast-paced coding competitions and win prizes. They can also be a lot of fun!"
+        desc: "Experience the thrill of solving real-world problems under pressure!",
     },
     {
         imgSrc: <FaChalkboardTeacher className="text-4xl text-[#F8B607]" />,
         name: "Seminars",
-        desc: "Learn from industry experts and expand your tech knowledge.",
+        desc: "Join our seminars to learn cool tech tips from industry experts.",
     },
     {
         imgSrc: <GiTeacher className="text-4xl text-[#F8B607]" />,
@@ -35,7 +35,7 @@ const cardContent = [
     {
         imgSrc: <GrProjects className="text-4xl text-[#F8B607]" />,
         name: "Projects",
-        desc: "Collaborate on exciting tech projects to showcase your skills and gain experience.",
+        desc: "Collaborate on exciting realtime projects to showcase your skills and gain experience.",
     }
 ];
 
