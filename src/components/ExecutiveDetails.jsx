@@ -1,4 +1,4 @@
-import sampleImg from '../images/Pravin.png'
+
 import Balaguru from '../images/Executive Mmebers/balaguru.webp'
 import Sujithaa from '../images/Executive Mmebers/Sujithaa.webp'
 import SriSaratthi from '../images/Executive Mmebers/Sri Saratthi.webp'
