@@ -22,7 +22,7 @@ const HomePage = () => {
                         where innovation and collaboration drive success.
                     </p>
                     <div className="flex items-center justify-center gap-5 mt-5 md:mt-10">
-                        <button onClick={() => handleNavigation('/join')} className="hover:bg-[#3CB371] bg-[#28A745] font-semibold text-white transition-all text-xl md:text-4xl rounded-2xl py-3 px-5">Join Now</button>
+                       <a href="https://forms.gle/hb8b8uyfHMSfY8hv6" target='blank'><button  className="hover:bg-[#3CB371] bg-[#28A745] font-semibold text-white transition-all text-2xl font-poppins md:text-4xl rounded-xl py-3 px-5">Join Now</button></a>
                         {/* <button className="p-4 rounded-2xl text-[#28A745] text-xl md:text-2xl py-3 px-5 border border-[#28A745] hover:text-white hover:bg-[#28A745] transition-all">Learn More</button> */}
                     </div>
                 </div>
