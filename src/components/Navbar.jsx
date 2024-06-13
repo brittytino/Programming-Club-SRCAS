@@ -2,6 +2,7 @@ import { useState } from "react";
 import { MdMenu, MdClose } from 'react-icons/md';
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import logoImg from '../images/logo-removebg-preview (1).png';
+import snrLogo from '../images/clgLogo.png'
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -31,7 +32,11 @@ const Navbar = () => {
         <div className="sticky bg-black top-0 z-10 w-full shadow-md text-white">
             <div className="flex flex-col md:flex-row md:items-center justify-between py-4 px-7 md:px-28 border-b border-gray-950">
                 <div className="flex items-center font-bold text-2xl cursor-pointer">
+                   
+                    <img onClick={() => handleNavigation('/')} src={snrLogo} alt="" className="text-3xl pl-1 md:px-3 h-16 w-50" />
                     <img onClick={() => handleNavigation('/')} src={logoImg} alt="" className="text-3xl pl-1 md:px-3 h-16 w-50" />
+                   
+                    
                     <div className="md:hidden ml-auto">
                         <MenuIcon onClick={toggleMenu} className="text-white text-3xl cursor-pointer" />
                     </div>
