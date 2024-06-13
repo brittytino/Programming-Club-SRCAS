@@ -33,8 +33,8 @@ const Navbar = () => {
             <div className="flex flex-col md:flex-row md:items-center justify-between py-4 px-7 md:px-28 border-b border-gray-950">
                 <div className="flex items-center font-bold text-2xl cursor-pointer">
                    
-                    <img onClick={() => handleNavigation('/')} src={snrLogo} alt="" className="text-3xl pl-1 md:px-3 h-16 w-50" />
-                    <img onClick={() => handleNavigation('/')} src={logoImg} alt="" className="text-3xl pl-1 md:px-3 h-16 w-50" />
+                    <img onClick={() => handleNavigation('/')} src={snrLogo} alt="" className="text-4xl pl-1 md:px-3 h-14 w-48 md:h-16 md:w-50" />
+                    <img onClick={() => handleNavigation('/')} src={logoImg} alt="" className="text-3xl pl-1 md:px-3 h-14 md:h-16 w-50" />
                    
                     
                     <div className="md:hidden ml-auto">
