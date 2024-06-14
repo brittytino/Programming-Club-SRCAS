@@ -43,7 +43,7 @@ export const executiveDetails = [
     { name: 'Saratthi', img: SriSaratthi , dept: 'B.Sc IT - III', linkedin:'https://www.linkedin.com/in/saratthi-080555166' },
     { name: 'Selvi.R', img: selvi , dept: 'B.Sc CS - II', linkedin:'https://www.linkedin.com/in/selvi-ravikumar-3274ab292/', instagram:'https://www.instagram.com/selvi.ravikumar_11' },
     { name: 'Srikanth R G', img: srikanth , dept: 'B.Sc CS CS - II', linkedin:'https://www.linkedin.com/in/srikanth-r-g-544937283?' , instagram:'https://www.instagram.com/spetsnaz_srikanth?' },
-    { name: 'Sujithaa J', img: Sujithaa , dept: 'B.Sc CS with CS - II', linkedin:'https://www.linkedin.com/in/sujithaa-j-41643b292?' },
+    { name: 'Sujithaa J', img: Sujithaa , dept: 'B.Sc CS with CS - II', linkedin:'https://www.linkedin.com/in/sujithaa-j-41643b292?',instagram:'https://www.instagram.com/suji_2408_j?igsh=MWd0MW9zajY2cG95ZA==' },
     { name: 'Tamilarasu K', img: tamilarasu , dept: 'B.Sc CS - III', linkedin:'https://www.linkedin.com/in/tamilarasu-k-930485306/', instagram:'https://www.instagram.com/peachboy_751/' },
     { name: 'Velan J', img: Velan , dept: 'B.Sc CS DA - II', linkedin:'https://www.linkedin.com/in/velan-jayashankar', instagram:'https://www.instagram.com/ig__velan__' },
     { name: 'Vikaas K S', img: Vikaas , dept: 'B.Sc IT - II', linkedin:'https://www.linkedin.com/in/vikaas-k-s-7644a9292?' ,instagram:'https://www.instagram.com/vikaas_0304?' },
