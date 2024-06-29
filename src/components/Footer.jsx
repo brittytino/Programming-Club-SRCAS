@@ -17,6 +17,41 @@ const Footer = () => {
                 <button onClick={()=> handleNavigation('/join')} className="py-3 px-5 rounded-2xl text-white text-xl md:text-2xl border border-yellow-500 hover:text-black hover:bg-yellow-500 transition-all">Contact Us</button>
             </div>
             <h1 className=" text-gray-400 text-md text-center mt-10">Designed by Programming club, SRCAS </h1>
+
+            <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+      <div class="footer__inner">
+        <div class="copyright">2024 © <a href="/">Programming Club | IITK</a>Developed &amp; Maintained by <a href="https://pclub.in">Programming Club IITK</a>.</div>
+        
+<div class="social">
+  <ul class="social__list list-reset">
+    
+    <li class="social__item">
+      <a class="social__link" href="https://twitter.com/pclubiitk" aria-label="social icon"><i class="ion ion-logo-twitter"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://www.youtube.com/@pclubiitk" aria-label="social icon"><i class="ion ion-logo-youtube"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://github.com/pclubiitk" aria-label="social icon"><i class="ion ion-logo-github"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://www.linkedin.com/in/pclubiitk" aria-label="social icon"><i class="ion ion-logo-linkedin"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
         </div>
     );
 };
