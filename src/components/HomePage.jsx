@@ -64,13 +64,13 @@ const HomePage = () => {
                         onChange={handleCarouselChange}
                     >
                         {carouselContent.map((item, index) => (
-                            <div key={index} className="carousel-slide overflow-hidden">
+                            <div key={index} className="carousel-slide overflow-hidden  ">
                                 {item.type === 'text' ? (
                                     <div className="px-6 md:px-0 mt-28">
                                         {item.content}
                                     </div>
                                 ) : (
-                                    <img src={item.src} alt={`Home Image ${index}`} className="w-full px-8 object-fill h-[350px] md:h-[500px] rounded-md border-none" />
+                                    <img src={item.src} alt={`Home Image ${index}`} className="w-full  px-8 object-fill h-[350px] md:h-[500px] rounded-md " />
                                 )}
                             </div>
                         ))}
@@ -85,7 +85,7 @@ const HomePage = () => {
                 </div>
             )}
             <marquee className="text-white mt-10 font-medium text-base md:text-2xl animate-pulse" behavior="" direction="">
-                Programming Club, Sri Ramakrishna College of Arts & Science
+            Programming Club of SRCAS *** Upcoming Event - Power BI Session *** AI Gamified -  exclusively for 1st years *** 1Day workshop on DevOps ***
             </marquee>
         </div>
     );
