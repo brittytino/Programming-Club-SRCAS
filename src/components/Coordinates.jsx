@@ -1,33 +1,18 @@
 import React, { useState } from 'react';
-import { FaInstagram, FaLinkedin } from 'react-icons/fa'; //icons 
-import { RiGlobalLine } from "react-icons/ri"; //icons
-import { staffCoordinators, officeBearers } from './Co-ordinates Details'; //details
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { RiGlobalLine } from "react-icons/ri";
+import { staffCoordinators, officeBearers } from './Co-ordinates Details';
 import Executive from './Executive';
+import MembersList from './MemberList';
 
 const Coordinators = () => {
-  const [showExecutive, setShowExecutive] = useState(false);
+  // State to track which section is active
+  const [activeSection, setActiveSection] = useState('coordinators');
 
-  return (
-    <div className="bg-[#010101] text-white min-h-screen p-6 md:p-12">
-      <h1 className="text-4xl md:text-4xl font-extrabold text-yellow-500 text-center mb-12">Pillars of the Club !</h1>
-
-      <div className="flex justify-center mb-8">
-  <button
-    onClick={() => setShowExecutive(false)}
-    className={`md:px-6 md:py-3 px-3 py-2 rounded-full mx-2 text-base md:text-lg font-medium md:font-semibold transition-all duration-300 ${!showExecutive ? 'bg-teal-500 text-white shadow-lg transform scale-105 hover:bg-teal-600' : 'bg-gray-700 text-gray-200 shadow hover:bg-gray-600'}`}
-  >
-    Coordinators
-  </button>
-  <button
-    onClick={() => setShowExecutive(true)}
-    className={`md:px-6 md:py-3 px-3 py-2 rounded-full mx-2 text-base md:text-lg font-medium md:font-semibold transition-all duration-300 ${showExecutive ? 'bg-teal-500 text-white shadow-lg transform scale-105 hover:bg-teal-600' : 'bg-gray-700 text-gray-200 shadow hover:bg-gray-600'}`}
-  >
-    Executive Members
-  </button>
-</div>
-
-
-      {!showExecutive ? (
+  // Function to render the active section
+  const renderSection = () => {
+    if (activeSection === 'coordinators') {
+      return (
         <>
           <section className="mb-16">
             <h2 className="md:text-4xl text-2xl font-semibold text-teal-500 mb-8 text-center relative">
@@ -84,9 +69,40 @@ const Coordinators = () => {
             <hr className="border-gray-700 mt-5 w-full" />
           </section>
         </>
-      ) : (
-        <Executive />
-      )}
+      );
+    } else if (activeSection === 'executive') {
+      return <Executive />;
+    } else if (activeSection === 'members') {
+      return <MembersList />;
+    }
+  };
+
+  return (
+    <div className="bg-[#010101] text-white min-h-screen p-6 md:p-12">
+      <h1 className="text-4xl md:text-4xl font-extrabold text-yellow-500 text-center mb-12">Pillars of the Club!</h1>
+
+      <div className="flex justify-center mb-8">
+        <button
+          onClick={() => setActiveSection('coordinators')}
+          className={`md:px-6 md:py-3 px-1  py-2 rounded-lg mx-2 text-sm md:text-lg font-medium md:font-semibold transition-all duration-300 ${activeSection === 'coordinators' ? 'bg-teal-500 text-white shadow-lg transform scale-105 hover:bg-teal-600' : 'bg-gray-700 text-gray-200 shadow hover:bg-gray-600'}`}
+        >
+          Coordinators
+        </button>
+        <button
+          onClick={() => setActiveSection('executive')}
+          className={`md:px-6 md:py-3 px-1 py-2 rounded-lg mx-2 text-sm md:text-lg font-medium md:font-semibold transition-all duration-300 ${activeSection === 'executive' ? 'bg-teal-500 text-white shadow-lg transform scale-105 hover:bg-teal-600' : 'bg-gray-700 text-gray-200 shadow hover:bg-gray-600'}`}
+        >
+          Executive Members
+        </button>
+        <button
+          onClick={() => setActiveSection('members')}
+          className={`md:px-6 md:py-3 px-1 py-2 rounded-lg mx-2 text-sm md:text-lg font-medium md:font-semibold transition-all duration-300 ${activeSection === 'members' ? 'bg-teal-500 text-white shadow-lg transform scale-105 hover:bg-teal-600' : 'bg-gray-700 text-gray-200 shadow hover:bg-gray-600'}`}
+        >
+          Member List
+        </button>
+      </div>
+
+      {renderSection()}
     </div>
   );
 };
